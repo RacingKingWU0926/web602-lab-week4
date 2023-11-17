@@ -2,7 +2,7 @@
 /* SCSS */
 nav {
   font-size: 1em;
-  font-font-weight: bold;
+  font-weight: bold;
   float: left;
 }
 nav ul {
@@ -76,7 +76,7 @@ footer {
   font-size: 0.85em;
 }
 
-button, .submit-buttton {
+button, .submit-button {
   color: white;
   width: 100px;
   height: 40px;
@@ -84,7 +84,7 @@ button, .submit-buttton {
   margin-top: 2em;
 }
 
-.submit-buttton {
+.submit-button {
   border: 1px #313130;
 }
 

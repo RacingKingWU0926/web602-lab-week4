@@ -1,15 +1,23 @@
+//- template for the main page
 extends layout
 
 block content
 
-  if registrations.length
-    table.listing-table.table-dark.table-striped
-      tr 
-        th Name 
-        th Email 
-      each registration in registrations 
-        tr 
-          td= registration.name 
-          td= registration.email 
-  else
-    p No registrations yet!
+  main
+    section#intro-text
+      span Simple Kitchen
+      h3 Simple & Comforting
+      | Recipes All Year Round
+      p Pan-seared chicken, Grill shrimp, mac & cheese—need we say more?
+    
+      //- Uncomment the following lines if needed
+      //- p.success SUCCESS
+      //- p.error ERROR
+      //- p.warning WARNING
+      button.submit-button View Recipes
+
+    section#intro-image
+      img(src='images/louisiana-barbecued-shrimp.webp', alt='Louisiana Barbecued Shrimp')
+
+  footer
+  | &copy; Copyright 2021

@@ -1,12 +1,24 @@
-doctype html 
+//- template for all pages
+doctype html
 html 
   head 
     title= `${title}`
-    link(rel='stylesheet', href='/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/public/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/styles-form.css')
+    link(rel='stylesheet', href='/css/styles.css')
 
   body
-    div.container.listing-reg
-      h1 My Amazing App 
 
-      block content
+//- this header will be used for all pages
+header
+  nav
+    ul
+      li
+        a(href='/') Home
+      li |
+      li
+        a(href='/blog') Blog
+
+  a.registerButton(href='/register') Register
+
+block content
