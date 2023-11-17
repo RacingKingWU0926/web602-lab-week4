@@ -17,3 +17,7 @@
 `npm install express-validator`
 
 create a `.env` file.
+
+
+`npm install sass -g`
+`sass <scss-path> <destination>`
