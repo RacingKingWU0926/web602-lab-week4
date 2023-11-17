@@ -59,7 +59,8 @@ router.get('/registrations', basic.check((req, res) => {
     .then((registrations) => {
       res.render('index', { title: 'Listing registrations', registrations});
     })
-    .catch(() => {
+    .catch((err) => {
+      console.log(err);
       res.send('Sorry! Something went wrong!');
     });
 }));

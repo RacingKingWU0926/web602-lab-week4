@@ -12,6 +12,8 @@
 
 `npm install http-auth`
 
+`npm install pug`
+
 `npm install express-validator`
 
 create a `.env` file.
