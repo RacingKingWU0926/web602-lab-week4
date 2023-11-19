@@ -1,14 +1,10 @@
-/* Nesting */
-
-
-/* SCSS */
+@import 'colors.scss';
 
 nav {
     font: {
-        size: 1em;
-        font-weight: bold;
+        size: 1.5em;
+        weight: bold;
     }
-    float: left;
     ul {
         list-style-type: none;
         li {

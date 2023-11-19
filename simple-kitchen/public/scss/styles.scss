@@ -3,7 +3,7 @@
 
 /* Variables */
 $fontFamily1: Arial, Helvetica, Sans-Serif;
-$fontFamily2: 'Sacramento', cursive;
+$fontFamily2: Sacramento, cursive;
 $fontSizeH1: 3em;
 $fontSizeH2: 2.5em;
 $fontSizeH3: 2em;
@@ -13,7 +13,7 @@ $fontSizeSmall: 0.85em;
 html {
   // Operations
   font-size: 0.8em + 0.2;           //1 
-  width: ( 100% / 2) + 50%      //75;
+  width: calc( 100% / 2) + 50%      //75;
 }
 
 body{
@@ -25,6 +25,17 @@ header {
     height: 50px;
     width: 1350px;
     margin: 0.8em auto 1em auto;
+
+    a.registerButton {
+      font: {
+        size: 1.5em;
+        weight: bold;
+      }
+      text-decoration: none;
+      color: $color4;
+      float: right;
+      margin: 0 5px 0 0;
+    }
 }
 
 main {
