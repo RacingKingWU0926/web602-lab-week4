@@ -1,0 +1,62 @@
+@import 'colors.scss';
+
+main {
+  background: $mainColor;
+
+  h2 {
+    text-align: center;
+    margin: 2em auto;
+  }
+
+  #reg-form {
+
+    .form-registration {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+
+      input {
+        width: 100%;
+        height: 1.8em;
+        margin: 0 auto 2em;
+        border: $color5 2px solid;
+      }
+
+      .btn {
+        flex: 1 0 100%;
+      }
+      .btn:hover {
+        cursor: pointer;
+        border: $color3 2px solid;
+      }
+
+      input[type="submit"] {
+        color: $color4;
+        width: 100px;
+        height: 35px;
+        background: $backgroundColor1;
+        margin-top: 2em;
+        border: none;
+      }
+    }
+
+    .my-errors {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: #333;
+    font-size: 1.2rem;
+    display: table;
+    }
+    .my-errors li {
+    margin: 0 0 1rem;
+    }
+    .my-errors li:before {
+    content: "! Error : ";
+    color: #f00;
+    font-weight: bold;
+    }
+  }
+}

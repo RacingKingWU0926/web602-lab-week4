@@ -3,8 +3,8 @@ doctype html
 html 
   head 
     title= `${title}`
-    link(rel='stylesheet', href='/public/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/styles-form.css')
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(rel='stylesheet', href='/css/form.css')
     link(rel='stylesheet', href='/css/styles.css')
 
   body
@@ -19,6 +19,6 @@ header
       li
         a(href='/blog') Blog
 
-  a.registerButton(href='/register') Register
+  a.register-button(href='/register') Register
 
 block content

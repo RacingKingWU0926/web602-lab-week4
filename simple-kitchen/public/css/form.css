@@ -1,0 +1,53 @@
+main {
+  background: rgb(255, 255, 255);
+}
+main h2 {
+  text-align: center;
+  margin: 2em auto;
+}
+main #reg-form .form-registration {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+main #reg-form .form-registration input {
+  width: 100%;
+  height: 1.8em;
+  margin: 0 auto 2em;
+  border: rgb(180, 180, 180) 2px solid;
+}
+main #reg-form .form-registration .btn {
+  flex: 1 0 100%;
+}
+main #reg-form .form-registration .btn:hover {
+  cursor: pointer;
+  border: rgb(49, 49, 48) 2px solid;
+}
+main #reg-form .form-registration input[type=submit] {
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 35px;
+  background: rgb(218, 170, 14);
+  margin-top: 2em;
+  border: none;
+}
+main #reg-form .my-errors {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: #333;
+  font-size: 1.2rem;
+  display: table;
+}
+main #reg-form .my-errors li {
+  margin: 0 0 1rem;
+}
+main #reg-form .my-errors li:before {
+  content: "! Error : ";
+  color: #f00;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=form.css.map */
