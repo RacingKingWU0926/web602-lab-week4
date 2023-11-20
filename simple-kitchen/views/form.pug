@@ -1,34 +1,38 @@
 //- template for the form part in the registration page
+extends layout
 
--data = data || {}
+block content
 
-if errors
-  ul
-    for error in errors
-      li= error.msg
+  -data = data || {}
 
-h2 Register to subscribe
-form(action="." method="POST" class="form-registration")
-  label(for="name") Name: 
-  input(
-    type="text"
-    id="name"
-    name="name"
-    class="form-control"
-    value=data.name
-  )
+  if errors
+    ul.my-errors
+      for error in errors
+        li= error.msg
+    return
 
-  label(for="email") Email:
-  input(
-    type="email"
-    id="email"
-    name="email"
-    class="form-control"
-    value=data.email
-  )
+  h2 Register to subscribe
+  form(action="." method="POST" class="form-registration")
+    label(for="name") Name: 
+    input(
+      type="text"
+      id="name"
+      name="name"
+      class="form-control"
+      value=data.name
+    )
 
-  input(
-    type="submit"
-    value="Register"
-    class="btn"
-  )
+    label(for="email") Email:
+    input(
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      value=data.email
+    )
+
+    input(
+      type="submit"
+      value="Register"
+      class="btn"
+    )
